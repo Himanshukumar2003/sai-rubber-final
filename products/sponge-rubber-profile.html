@@ -635,23 +635,30 @@
 
 
 
-                    <div class="newsletter-form">
+                    <div class="newsletter-form mb-4">
                         <h4 class="mb-3">Enter Buying Requirement Details</h4>
-                        <form>
+                        <form id="contact-form" action="/php/product.php" method="POST" onsubmit="validateForm(event)">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Enter Product Name" required>
+                                <input type="text" id="product-name" name="product_name" class="form-control"
+                                    placeholder="Enter Product Name">
+                                <div id="product-name-error" class="error"></div>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Enter Your Email" required>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Enter Your Email">
+                                <div id="email-error" class="error"></div>
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Enter Your Contact Number" required>
+                                <input type="tel" id="phone" name="phone" class="form-control"
+                                    placeholder="Enter Your Contact Number">
+                                <div id="phone-error" class="error"></div>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Enter Your Message"
-                                    required></textarea>
+                                <textarea id="message" name="message" class="form-control" rows="4"
+                                    placeholder="Enter Your Message"></textarea>
+                                <div id="message-error" class="error"></div>
                             </div>
-                            <button type="submit" class="btn-two  w-100">Subscribe</button>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
                         </form>
                     </div>
                     <div class="mb-4">
@@ -942,7 +949,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/index.js"></script>
+    <s <script src="/js/index.js"></script>
+        <script src="/js/contact/product.js"></script>
+
 </body>
 
 </html>

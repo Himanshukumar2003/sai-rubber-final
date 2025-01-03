@@ -161,7 +161,8 @@ footer a {
 
 .dropdown-item {
     line-height: 120%;
-    padding: 10px 20px;
+    padding: 5px 20px;
+    font-size: 16px;
 }
 
 .dropdown-item:hover {
@@ -912,6 +913,7 @@ footer a {
     content: '';
     position: absolute;
     top: 0;
+    opacity: 0.2;
     left: 0;
     right: 0;
     bottom: 0;
