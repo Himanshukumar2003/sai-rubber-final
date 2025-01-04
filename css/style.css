@@ -906,7 +906,7 @@ footer a {
 
 .contact-header {
     position: relative;
-    background-image: url('../img/header-bg.jpeg');
+    background-image: url(../img/template_photo_contact-us.jpg);
     background-size: cover;
     background-position: center;
     padding: 200px 0 100px 0;
@@ -922,7 +922,7 @@ footer a {
     content: '';
     position: absolute;
     top: 0;
-    opacity: 0.2;
+    opacity: 0.3;
     left: 0;
     right: 0;
     bottom: 0;
