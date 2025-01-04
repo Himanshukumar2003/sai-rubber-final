@@ -874,7 +874,7 @@ footer a {
 
 .contact-info li {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 10px;
     margin-bottom: 15px;
     color: white;
