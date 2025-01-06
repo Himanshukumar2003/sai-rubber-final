@@ -1170,13 +1170,10 @@ a {
 }
 
 .contact-section {
-    background-image: url('/img/blog_1.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    margin-bottom: 80px;
     text-align: start;
-    margin-top: 3rem;
 }
 
 .newsletter-form {
@@ -1185,6 +1182,9 @@ a {
     border-radius: 8px;
 }
 
+.section-padding-two {
+    padding: 80px 0;
+}
 
 
 .category-link {
@@ -1443,4 +1443,51 @@ a {
     border-radius: 20px;
     background-color: #eaf3f5;
 
+}
+
+
+
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin-bottom: 1.5rem;
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+
+    padding: 5px;
+    background-color: #0d9488;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrapper i {
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-info {
+    color: #4a4a4a;
+}
+
+.contact-info .label {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0.2rem;
+    color: #000;
+}
+
+.contact-info .value {
+    color: #666;
+    font-size: 0.9rem;
 }
