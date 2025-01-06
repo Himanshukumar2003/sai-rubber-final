@@ -1278,11 +1278,9 @@ a {
 }
 
 
-.icon-wrapper {
-    width: 50px;
-    height: 50px;
+.info-card .icon-wrapper {
+
     background-color: #f8f9fa;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1296,7 +1294,7 @@ a {
     border-radius: 20px;
 }
 
-.icon-wrapper i {
+.info-card .icon-wrapper i {
     color: #6b7280;
     font-size: 1.5rem;
 }
@@ -1492,5 +1490,6 @@ a {
 }
 
 .value a {
-    color: #666 !important;
+    color: #666;
+
 }
