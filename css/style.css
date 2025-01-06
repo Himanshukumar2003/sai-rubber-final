@@ -1490,3 +1490,7 @@ a {
     color: #666;
     font-size: 0.9rem;
 }
+
+.value a {
+    color: #666 !important;
+}
