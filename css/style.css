@@ -1448,7 +1448,7 @@ a {
 
 .contact-item {
     display: flex;
-    align-items: center;
+    align-items: start;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     padding: 20px;
     gap: 10px;
@@ -1459,7 +1459,6 @@ a {
 .contact-item .icon-wrapper {
     width: 40px;
     height: 40px;
-
     padding: 5px;
     background-color: #0d9488;
     border-radius: 50%;
@@ -1468,7 +1467,7 @@ a {
     justify-content: center;
 }
 
-.icon-wrapper i {
+.contact-item .icon-wrapper i {
     color: white;
     font-size: 1rem;
 }
