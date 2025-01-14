@@ -9,6 +9,10 @@ body {
     background-color: #eaf3f5
 }
 
+.bg-three {
+    background-color: rgb(255, 236, 224, 0.5)
+}
+
 .top-bar {
     background-color: #f8f9fa;
     padding: 8px 0;
@@ -1525,4 +1529,42 @@ a {
     .nav-link {
         font-size: 14px !important;
     }
+}
+
+
+.about-use img {
+    border-radius: 20px;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+
+
+.mission {
+    border: none;
+    border-radius: 20px;
+    border: 2px solid #0d9488;
+    height: 100%;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.mission:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.mission .card-title {
+    color: #333;
+    font-weight: bold;
+}
+
+
+.mission i {
+    color: #0d9488 !important;
+    font-size: 45px !important;
+}
+
+.mission .card-text {
+    color: #555;
 }
