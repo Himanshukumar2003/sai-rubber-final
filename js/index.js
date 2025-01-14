@@ -1,4 +1,28 @@
 
+document.querySelectorAll('.dropdown-submenu').forEach(function (submenu) {
+    submenu.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (this.querySelector('.dropdown-menu').classList.contains('show')) {
+            this.querySelector('.dropdown-menu').classList.remove('show');
+        } else {
+            // Hide any other open submenus
+            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (menu) {
+                menu.classList.remove('show');
+            });
+            this.querySelector('.dropdown-menu').classList.add('show');
+        }
+    });
+});
+
+document.addEventListener('click', function () {
+    document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (menu) {
+        menu.classList.remove('show');
+    });
+});
+
+
+
+
 
 const counterAnimation = () => {
     const stats = document.querySelectorAll('.stat-number');

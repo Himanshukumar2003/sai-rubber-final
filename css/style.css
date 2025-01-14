@@ -60,6 +60,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
     height: 100%;
     background-color: #000;
     opacity: 30%;
@@ -82,11 +83,10 @@ body {
     position: relative;
     min-height: 90vh;
     display: flex;
-    margin-top: -95px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding-top: 220px;
+    padding-top: 80px;
     color: #111;
     text-align: center;
     position: relative;
@@ -167,15 +167,20 @@ footer a {
     }
 }
 
+
+
 .dropdown-item {
-    line-height: 120%;
-    padding: 5px 20px;
+    padding: 0px 40px 5px 20px;
     font-size: 16px;
 }
 
 .dropdown-item:hover {
+    color: #0d9488 !important;
+}
+
+
+.dropdown-item:active {
     background-color: #0d9488 !important;
-    color: white;
 }
 
 .product-category {
@@ -451,7 +456,7 @@ footer a {
     left: 0;
     right: 0;
     padding: 30px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     color: white;
 }
 
@@ -464,6 +469,7 @@ footer a {
     color: white;
     text-decoration: none;
     display: inline-flex;
+
     align-items: center;
     gap: 8px;
     transition: transform 0.3s ease;
@@ -483,7 +489,13 @@ footer a {
     background: white;
     border-radius: 15px;
     padding: 20px;
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-two {
+    min-height: 420px;
+
 }
 
 .product-card:hover {
@@ -506,7 +518,7 @@ footer a {
 .product-meta {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     gap: 20px;
     margin-bottom: 15px;
     font-size: 0.9rem;
@@ -775,10 +787,16 @@ footer a {
     max-width: 800px;
 }
 
+.card-two .learn-more-btn {
+    position: absolute;
+    bottom: 20px;
+}
+
 .learn-more-btn {
     background: #000;
     color: white;
     padding: 12px 24px;
+
     border-radius: 25px;
     text-decoration: none;
     display: inline-block;
@@ -1278,14 +1296,15 @@ a {
     padding: 0 !important;
 }
 
+.info-card :first-child {
+    align-items: start !important;
+}
 
 .info-card .icon-wrapper {
-    width: 50px;
-    height: 50px;
     background-color: #f8f9fa;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
     margin-right: 15px;
 }
 
@@ -1446,6 +1465,12 @@ a {
 }
 
 
+.dropdown-submenu .dropdown-toggle::after {
+    content: '';
+    position: absolute !important;
+    right: 15px !important;
+    top: 20px !important
+}
 
 
 .contact-item {
