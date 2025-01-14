@@ -1519,3 +1519,10 @@ a {
     color: #666;
 
 }
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-link {
+        font-size: 14px !important;
+    }
+}
