@@ -1,0 +1,93 @@
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon i {
+    font-size: 1.5rem;
+    color: #0d9488;
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0px !important;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+/* Custom color for the main heading */
+.display-4 {
+    color: #2d3436;
+}
+
+/* Gradient background for cards on hover */
+.feature-card:hover .feature-icon {
+    background: linear-gradient(45deg, #0d9488, #0dcaf0);
+}
+
+.feature-card:hover .feature-icon i {
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Add some depth to cards */
+.card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Smooth transitions */
+.card,
+.feature-icon,
+.feature-icon i {
+    transition: all 0.3s ease;
+}
+
+/* Better contrast for text */
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Enhanced shadow effect */
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+
+.category-cards {
+    overflow: hidden;
+    border-radius: 20px !important;
+}
+
+.category-cards img {
+    max-height: 200px;
+    object-fit: cover;
+
+}
+
+.category-cards p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

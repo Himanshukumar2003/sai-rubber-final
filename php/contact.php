@@ -26,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $errors[] = "Please enter a message.";
     }
 
-    // If there are errors, return them
     if (!empty($errors)) {
         echo "<script>
             alert('" . implode("\\n", $errors) . "');
