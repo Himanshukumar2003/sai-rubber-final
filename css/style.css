@@ -175,7 +175,7 @@ footer a {
 
 .dropdown-item {
     padding: 0px 40px 5px 20px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .dropdown-item:hover {
@@ -394,7 +394,6 @@ footer a {
     padding: 12px 24px;
     background-color: white;
     border-radius: 50px;
-    margin: 8px;
     border: 1px solid black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1239,7 +1238,7 @@ a {
     background: white;
     border-radius: 8px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    padding: 24px;
+    padding: 20px;
 }
 
 .specs-title {
@@ -1451,7 +1450,7 @@ a {
 
     .hero-section {
         margin-top: -96px;
-
+        padding-top: 150px;
     }
 
     .hero-title {
