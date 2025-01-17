@@ -90,7 +90,6 @@ body {
 
 .hero-section {
     position: relative;
-    height: 80vh;
 
 }
 
@@ -99,12 +98,12 @@ body {
 }
 
 
-.hero-section .text-section {
+/* .hero-section .text-section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 /* .hero-section {
     background-image: url(../img/hero-section-bg.jpg);
@@ -238,10 +237,7 @@ footer a {
 /* Make dropdown items work well on mobile */
 @media (max-width: 991px) {
 
-    .hero-section img{
-        object-fit:cover;
 
-    }
     .dropdown-submenu .dropdown-menu {
         left: 0 !important;
     }
