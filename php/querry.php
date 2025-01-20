@@ -42,11 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // If all fields are valid, send email
     if ($is_valid) {
-        $to = 'info@saltonteck.com';
+               $to = 'admin@sairubberengg.co.in';
         $subject = "SAi Rubber Form Details";
         $message = "
         <html>
-            <head><title>SAi Rubber Form Details</title></head>
+            <head><title>SAi Rubber Product inuerry </title></head>
             <body>
                 <p><b>Name:</b> {$con_name}</p>
                 <p><b>Email:</b> {$con_email}</p>
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <p><b>Message:</b> {$con_message}</p>
             </body>
         </html>";
-        $header = "From:info@saltonteck.com\r\n";
+        $header = "From:admin@sairubberengg.co.in\r\n";
         $header .= "MIME-Version: 1.0\r\n";
         $header .= "Content-type: text/html\r\n";
 

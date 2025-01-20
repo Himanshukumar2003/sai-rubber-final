@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/category.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 <body>
@@ -380,10 +381,10 @@
     <div class="section-padding">
         <div class="container">
             <div class="mb-4">
-                <h3>
+                <h3 data-aos="fade-left data-aos-delay=" 200">
                     4mm-5Mm U-Rubber
                 </h3>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="400">
                     When it comes to buying a product which can give excellent control over vibration & noise and use
                     for decorative trim & sealing, U-Type Rubber Profiles is perfect for such use. Featuring high level
                     of temperature flexibility and excellent steam & moisture resistance, the gamut is a smart
@@ -398,7 +399,7 @@
                 <div class="row g-4">
                     <!-- Feature 1 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-water"></i>
@@ -413,7 +414,7 @@
 
                     <!-- Feature 2 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-flask"></i>
@@ -428,7 +429,7 @@
 
                     <!-- Feature 3 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-dumbbell"></i>
@@ -443,7 +444,7 @@
 
                     <!-- Feature 4 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-door-open"></i>
@@ -462,7 +463,7 @@
                 <div class="mt-4">
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-4 ">
-                            <div class="card category-cards">
+                            <div class="card category-cards" data-aos="fade-up">
                                 <img class="card-img-top" src="/product-img/U-Type-Rubber-Profiles.webp"
                                     alt="Card image cap">
                                 <div class="card-body">
@@ -480,7 +481,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 ">
-                            <div class="card category-cards">
+                            <div class="card category-cards" data-aos="fade-up">
                                 <img class="card-img-top" src="/product-img/epdm-rubber-profile.webp"
                                     alt="Card image cap">
                                 <div class="card-body">
@@ -634,6 +635,18 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                offset: 100, // Trigger offset in pixels
+                once: true, // Whether animation should happen only once
+            });
+        });
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="/js/contact/sand-querry.js"></script>
 

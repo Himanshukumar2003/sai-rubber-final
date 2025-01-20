@@ -4,13 +4,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = htmlspecialchars($_POST['email']);
     $phone = htmlspecialchars($_POST['phone']);
     $messageContent = htmlspecialchars($_POST['message']);
-    $to = 'devliyalhimanshu@gmail.com';
+    $to = 'admin@sairubberengg.co.in';
         $subject = "Sai Ruuber Products Enqarry";
 
     $message = "
     <html>
     <head>
-        <title>Salton Teck LLP Form Submission</title>
+        <title>Sai Ruuber Products Enqarry</title>
     </head>
     <body>
         <p><strong>Product Name:</strong> $productName</p>

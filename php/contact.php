@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Email configuration
-    $to = "devliyalhimanshu@gmail.com"; // Replace with your email address
+    $to = "admin@sairubberengg.co.in"; // Replace with your email address
     $subject = "Sai Rubber Contact Enquiry";
 
     $message = "

@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="/css/category.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -383,11 +384,11 @@
     <div class="section-padding">
         <div class="container">
             <div class="mb-4">
-                <h3>
+                <h3 data-aos="fade-left" data-aos-delay="300">
 
                     Rubber Cords
                 </h3>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="500">
                     Sponge Rubber/Rubber Cords are reckoned for their excellent elasticity level, good anti aging
                     properties, high flexibility level and anti slippery attributes. Surface of these rubber items is
                     totally chemical and ozone protected. These rubber products can endure shock and these are totally
@@ -405,7 +406,7 @@
                 <div class="mt-4">
                     <div class="row g-4">
                         <div class="col-md-6 col-lg-4 ">
-                            <div class="card category-cards">
+                            <div class="card category-cards" data-aos="fade-up" data-aos-delay="300">
                                 <img class="card-img-top" src="/product-img/Silicone-Rubber-Cords.webp"
                                     alt="Card image cap">
                                 <div class="card-body">
@@ -425,7 +426,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 ">
-                            <div class="card category-cards">
+                            <div class="card category-cards" data-aos="fade-up" data-aos-delay="500">
                                 <img class="card-img-top" src="/product-img/Sponge-Rubber-Strips.webp"
                                     alt="Card image cap">
                                 <div class="card-body">
@@ -578,6 +579,20 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                offset: 100, // Trigger offset in pixels
+                once: true, // Whether animation should happen only once
+            });
+        });
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="/js/contact/sand-querry.js"></script>
 

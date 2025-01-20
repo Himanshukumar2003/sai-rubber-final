@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="/css/category.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -377,9 +378,9 @@
     <div class="section-padding">
         <div class="container">
             <div class="mb-4">
-                <h3>
+                <h3 data-aos="fade-left" data-aos-delay="200">
                     Bus Body Rubber Beading</h3>
-                <p>
+                <p data-aos="fade-right" data-aos-delay="400">
                     To give perfect fitting to the glass, mud guard and many other parts of buses, here we are offering
                     Bus Body Fitting Rubber. Anti-abrasive in nature, this one is also installed to guard buses from
                     damages like scratches, dents & breakage that may harm it during accidents. The absolutely simple to
@@ -397,7 +398,7 @@
                 <div class="row g-4">
                     <!-- Feature 1 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-shield-alt"></i>
@@ -414,7 +415,7 @@
 
                     <!-- Feature 2 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-wind"></i>
@@ -430,7 +431,7 @@
 
                     <!-- Feature 3 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-flask"></i>
@@ -445,13 +446,13 @@
 
                     <!-- Feature 4 -->
                     <div class="col-lg-3 col-md-4">
-                        <div class="card h-100 border-0 shadow-sm feature-card">
+                        <div class="card h-100 border-0 shadow-sm feature-card" data-aos="fade-up" data-delay="200">
                             <div class="card-body p-4">
                                 <div class="feature-icon mb-3">
                                     <i class="fas fa-sync-alt"></i>
                                 </div>
-                                <h3 class="h5 mb-3">Easy Maintenance</h3>
-                                <p class="text-muted mb-0">
+                                <h3 class="h5 mb-3" data-aos="fade-right" data-aos-delay="200">Easy Maintenance</h3>
+                                <p class="text-muted mb-0" data-aos="fade-left" data-aos-delay="500">
                                     Can be washed to have new like finishing for years, ensuring lasting appearance
                                 </p>
                             </div>
@@ -462,7 +463,7 @@
                     <div class="mt-4">
                         <div class="row g-4">
                             <div class="col-lg-4 col-md-6">
-                                <div class="card category-cards">
+                                <div class="card category-cards" data-aos="fade-up" data-aos-delay="500">
                                     <img class="card-img-top" src="/product-img/Glass-Rubber-Beading.jpg"
                                         alt="Card image cap">
                                     <div class="card-body">
@@ -485,7 +486,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 ">
-                                <div class="card category-cards">
+                                <div class="card category-cards" data-aos="fade-up" data-aos-delay="800">
                                     <img class="card-img-top" src="/product-img/Rubber-Flocked-Channel.webp"
                                         alt="Card image cap">
                                     <div class="card-body">
@@ -503,7 +504,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 ">
-                                <div class="card category-cards">
+                                <div class="card category-cards" data-aos="fade-up" data-aos-delay="300">
                                     <img class="card-img-top" src="/product-img/Bus-Door-Rubber-Seal.jpg"
                                         alt="Card image cap">
                                     <div class="card-body">
@@ -658,6 +659,19 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                offset: 100, // Trigger offset in pixels
+                once: true, // Whether animation should happen only once
+            });
+        });
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="/js/contact/sand-querry.js"></script>
 
