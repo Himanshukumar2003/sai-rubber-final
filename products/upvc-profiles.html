@@ -10,11 +10,13 @@
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="/img/logo.png">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -386,13 +388,14 @@
                     <!-- Updated Image -->
                     <div class="mb-4">
                         <img src="/product-img/UPVC-Profiles.webp"
-                            class="img-fluid w-100 rounded-4 mb-4 description-img" alt="U-Type Rubber Profiles
+                            class="img-fluid w-100 rounded-4 mb-4 description-img" data-aos="zoom-in"
+                            data-aos-delay="200" alt="U-Type Rubber Profiles
 ">
                     </div>
 
                     <!-- Product Description -->
                     <div class="mb-4">
-                        <h3>Product Description</h3>
+                        <h3 data-aos="fade-right" data-aos-delay="300">Product Description</h3>
                         <p>With a vision to serve clients in best possible manner, we have been engaged in offering
                             quality approved UPVC Profiles. These profiles are highly admired among clients owing to
                             their sturdiness, longer life and optimum strength. Offered profiles are cut and joined
@@ -973,7 +976,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/index.js"></script>
     <script src="/js/contact/product.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                offset: 100, // Trigger offset in pixels
+                once: true, // Whether animation should happen only once
+            });
+        });
+    </script>
 </body>
 
 </html>
