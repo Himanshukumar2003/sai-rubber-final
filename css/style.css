@@ -93,8 +93,29 @@ body {
 
 }
 
+
+
+
+
 .hero-section img {
+    width: 100%;
     object-fit: contain;
+    object-position: 0 50%;
+    /* Horizontal scroll start point */
+    animation: scrollEffect 5s linear infinite;
+    /* Infinite scroll animation */
+}
+
+@keyframes scrollEffect {
+    0% {
+        object-position: 0 50%;
+        /* Start from left */
+    }
+
+    100% {
+        object-position: 100% 50%;
+        /* Scroll to right */
+    }
 }
 
 

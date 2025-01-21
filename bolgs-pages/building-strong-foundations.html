@@ -13,6 +13,8 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -381,10 +383,10 @@
                 <div class="col-lg-8">
 
                     <img src="/img/blog/building-strong-foundations.jpg"
-                        class="img-fluid w-100 rounded-4 mb-4 description-img">
+                        class="img-fluid w-100 rounded-4 mb-4 description-img" data-aos="zoom-in">
                     <div class="mb-4">
-                        <h3>Building Strong Foundations</h3>
-                        <p>
+                        <h3 data-aos="fade-left data-aos-delay=" 200">Building Strong Foundations</h3>
+                        <p data-aos="fade-right" data-aos-delay="300">
                             Sai Rubber is committed to supporting infrastructure development through the provision of
                             high-performance rubber solutions that are crucial for the longevity and stability of
                             structural projects. With over two decades of expertise, we’ve earned the trust of
@@ -394,14 +396,16 @@
                         </p>
 
 
-                        <p> Our bridge bearings are designed to absorb and manage the movement and vibrations of bridges
+                        <p data-aos="fade-left" data-aos-delay="400"> Our bridge bearings are designed to absorb and
+                            manage the movement and vibrations of bridges
                             under heavy traffic, while our expansion joints allow for structural flexibility. These
                             essential products prevent structural damage caused by temperature variations, pressure, and
                             external forces like seismic activity. These solutions ensure that infrastructure can
                             withstand
                             the test of time, weather, and traffic.</p>
 
-                        <p> Sai Rubber’s steel-rubber composite components are another vital offering, providing robust
+                        <p data-aos="fade-right" data-aos-delay="500"> Sai Rubber’s steel-rubber composite components
+                            are another vital offering, providing robust
                             materials for bridges, highways, and other major infrastructure works. These components are
                             engineered to address the stresses that come with heavy-duty construction, providing
                             longevity,
@@ -409,7 +413,8 @@
                             integrity of roads, bridges, and buildings, ensuring safety and performance in the long
                             term.</p>
 
-                        <p> Whether it’s new construction or bridge rehabilitation, Sai Rubber provides reliable
+                        <p data-aos="fade-left" data-aos-delay="600"> Whether it’s new construction or bridge
+                            rehabilitation, Sai Rubber provides reliable
                             products
                             that meet industry standards and exceed customer expectations. Our team works closely with
                             clients, offering tailored solutions to fit specific project requirements. With an extensive
@@ -417,8 +422,6 @@
                             Rubber
                             continues to play a critical role in building and maintaining the infrastructure that keeps
                             cities and countries connected.</p>
-
-
                     </div>
 
                 </div>
@@ -427,19 +430,18 @@
                 <div class="col-lg-4">
                     <div class="mb-4">
                         <div class="mb-3 d-flex align-items-center gap-1">
-                            <h4 class="text-nowrap m-0">Relative Blog</h4>
+                            <h4 class="text-nowrap m-0" data-aos="fade-left" data-aos-delay="200">Relative Blog</h4>
                             <div style="padding: 1px; background-color:#dadce0; width: 100%;"></div>
                         </div>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="/bolgs-pages/building-strong-foundations.html"
-                                    class="text-decoration-none text-dark category-link"><i
-                                        class="bi bi-caret-right-fill me-2"></i> Building Strong Foundations: Sai
-                                    Rubber’s Role in Infrastructure </a></li>
-                            <li class="mb-2"><a href="/bolgs-pages/innovation-meets-durability.html"
+
+                            <li class="mb-2" data-aos="fade-right" data-aos-delay="600"><a
+                                    href="/bolgs-pages/innovation-meets-durability.html"
                                     class="text-decoration-none text-dark category-link"><i
                                         class="bi bi-caret-right-fill me-2"></i>Innovation Meets Durability: Custom
                                     Rubber Solutions for Every Industry</a></li>
-                            <li class="mb-2"><a href="//bolgs-pages/microwave-curing.html"
+                            <li class="mb-2" data-aos="fade-left" data-aos-delay="800"><a
+                                    href="/bolgs-pages/microwave-curing.html"
                                     class="text-decoration-none text-dark category-link"><i
                                         class="bi bi-caret-right-fill me-2"></i>
                                     Microwave Curing: Transforming Rubber Manufacturing
@@ -450,11 +452,11 @@
 
 
                     <div class="contact-benner position-relative">
-                        <div class="text-center">
+                        <div class="text-center" data-aos="fade-right" data-aos-delay="200">
                             <p>Whether it’s new construction or bridge rehabilitation, Sai Rubber provides reliable
                                 products</p>
 
-                            <a href="/contact.html" class="btn">Contact-us</a>
+                            <a href="/contact.html" class="btn" data-aos="zoom-in" data-aos-delay="600">Contact-us</a>
                         </div>
                     </div>
 
@@ -543,6 +545,20 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                offset: 100, // Trigger offset in pixels
+                once: true, // Whether animation should happen only once
+            });
+        });
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/index.js"></script>
