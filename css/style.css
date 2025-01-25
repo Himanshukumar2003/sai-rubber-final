@@ -2,7 +2,15 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    --main-color: #066255
+    overflow-x: hidden;
+
+
+}
+
+* {
+    margin: 0;
+
+    padding: 0;
 }
 
 .bg-two {
@@ -85,11 +93,14 @@ body {
 
 }
 
-
+section {
+    overflow: hidden;
+}
 
 
 .hero-section {
     position: relative;
+    overflow: hidden;
 
 }
 
